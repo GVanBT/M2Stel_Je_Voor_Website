@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dit ben ik!</title>
+</head>
+<script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+    function speak() {
+            const text = document.getElementById('textInput').value;
+            const utterance = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(utterance);
+        }
+</script>
+<body>
+    <header>
+        <h1>
+            Mijn blik op de toekomst.
+            <div></div>
+            Gabriel van Breet Torres.
+        </h1>
+    </header>
+    </div>
+    <article>
+        <table scope="row", style="padding-bottom:50px">
+            <tr>
+                <th>
+                    <h2>
+                        Mijn tech skills aan
+                        <div></div>
+                        het einde van de opleiding
+                    </h2>
+                </th>
+                <th>
+                    <h2>
+                        Mijn soft skills straks.
+                    </h2>
+                </th>
+                <th>
+                    <h2>
+                        Wat wil ik bereikt hebben;
+                        <div></div>
+                        producten die ik heb gemaakt/kan maken
+                    </h2>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <img src="images/techskills.png" alt="tech skills", width="250", height="250", border-radius="50%", style="padding-bottom: auto">
+                </td>
+                <td>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <img src="images/softskills.png" alt="soft skills", width="250", height="250", border-radius="50%", style="padding-bottom: auto">
+                </td>
+                <td>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <img src="images/producten.png" alt="producten", width="250", height="250", border-radius="50%", style="padding-bottom: auto">
+                </td>
+            </tr>
+        </table>
+        <table scope="row", style="padding-right:50px">
+            <tr>
+                <th>
+                    <h2>
+                        Na het MA; Opleiding Hierna?
+                        <div></div>
+                        Of meteen werken?
+                    </h2>
+                </th>
+                <th>
+                    <h2>
+                        Mijn droombaan.
+                    </h2>
+                </th>
+                <th>
+                    <h2>
+                        Een andere droom.
+                    </h2>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <img src="images/na_het_ma.png" alt="na het MA", width="250", height="250", border-radius="50%", style="padding-bottom: auto">
+                </td>
+                <td>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <img src="images/dreamjob.png" alt="droom baan", width="250", height="250", border-radius="50%", style="padding-bottom: auto">
+                </td>
+                <td>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <img src="images/andere_droom.png" alt="een andere droom", width="250", height="250", border-radius="50%", style="padding-bottom: auto">
+                </td>
+            </tr>
+        </table>
+        <div></div>
+        <!-- <table>
+        <tr>
+            <th scope="row", style="padding-right: 100px">
+                <h6>
+                    Mijn top 10 games
+                </h6>
+                <img src="images/labrador.jpg" alt="gametop10", width="250", height="250">
+            </th>
+            <td>
+                <p style="padding-left: 50px">
+                    <ul>
+                        <li>1. test1</li>
+                        <li>2. </li>
+                        <li>3. </li>
+                        <li>4. </li>
+                        <li>5. </li>
+                        <li>6. </li>
+                        <li>7. </li>
+                        <li>8. </li>
+                        <li>9. </li>
+                        <li>10. test2</li>
+
+                    </ul>
+                </p>
+            </td>
+            </table>
+        </tr> -->
+        <textarea id="textInput" rows="2" cols="50" placeholder="Type something..."></textarea><br>
+        <button onclick="speak()">Speak</button>
+    </article>
+</body>
+<footer>
+    <a href="https://github.com/GVanBT">Gemaakt door Gabriel van Breet Torres</a>
+    <a href="standard_index.html">
+        <button>Go to main page</button>
+    </a>
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</html>

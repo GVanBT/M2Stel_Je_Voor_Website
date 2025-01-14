@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dit ben ik!</title>
+</head>
+<script>
+        // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+<body>
+    <header>
+        <h1>
+            Deze website gaat over mij
+            <div></div>
+            Gabriel van Breet Torres.
+        </h1>
+    </header>
+    </div>
+    <article>
+        <table>
+        <tr>
+            <th scope="row">
+                <img src="images/profile_photo.jpg" alt="portrait", width="250", height="250", border-radius="50%", style="padding-right: 50px">
+            </th>
+            <td>
+                <h2>
+                    Over mij.
+                </h2>
+                <p>
+                    Ik woon in Amsterdam en op mijn vorige school DENISE, zat ik de VMBO te doen waarna ik hier op het Mediacollege kwam om  game developer te worden.
+                </p>
+            </td>
+        </tr>
+        </table>
+        <div></div>
+        <table>
+        <tr>
+            <th scope="row", style="padding-right: 450px">
+                <p style="padding-left: 300px">
+                    Ik woon in Osdorperban.
+                </p>
+            </th>
+            <td>
+                <h3>
+                    Woonplaats.
+                </h3>
+                <img src="images/home.png" alt="thuis", width="400", height="400">
+            </td>
+        </tr>
+        </table>
+        <div></div>
+        <table>
+        <tr>
+            <th scope="row", style="padding-right: 100px">
+                <h4>
+                    Wat kan ik al?
+                </h4>
+                <img src="images/labrador.jpg" alt="skills", width="400", height="400">
+            </th>
+            <td>
+                <p style="padding-left: 50px">
+                    Ik ben goed in Engels, Nederlands en Spaans. Ik heb ook al eerder Github gebruikt en dingen met games gedaan.
+                </p>
+            </td>
+        </tr>
+        </table>
+        <div></div>
+        <table>
+        <tr>
+            <th scope="row", style="padding-right: 300px">
+                <p style="padding-left: 300px">
+                    Ik speel sandbox-type en games die moeilijk of oldschool zijn graag.
+                </p>
+            </th>
+            <td>
+                <h5>
+                    In mijn vrije tijd game ik graag.
+                </h5>
+                <img src="images/ac6.png" alt="game", width="400", height="400">
+            </td>
+        </tr>
+        </table>
+        <div></div>
+        <table>
+        <tr>
+            <th scope="row", style="padding-right: 100px">
+                <h6>
+                    Mijn top 10 games
+                </h6>
+                <img src="images/top10.png" alt="gametop10", width="400", height="400">
+            </th>
+            <td>
+                <p style="padding-left: 50px">
+                    <ul>
+                        <li>1. Terraria</li>
+                        <li>2. Limbus Company</li>
+                        <li>3. Armored Core 6</li>
+                        <li>4. Dark Souls 2: Scholar of the First Sin</li>
+                        <li>5. Legacy of Kain: Defiance</li>
+                        <li>6. Elden Ring</li>
+                        <li>7. Dawn of War: Soulstorm</li>
+                        <li>8. Star Wars: Republic Commando</li>
+                        <li>9. ULTARKILL</li>
+                        <li>10. Stellaris</li>
+
+                    </ul>
+                </p>
+            </td>
+            </table>
+        </tr>
+    </article>
+</body>
+<footer>
+    <a href="https://github.com/GVanBT">Gemaakt door Gabriel van Breet Torres</a>
+    <a href="blik_op_de_toekomst.html">
+        <button>Go to Blik op de toekomst page.</button>
+    </a>
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</html>
